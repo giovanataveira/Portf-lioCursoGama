@@ -1,10 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+        crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" 
+rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Martel:wght@300;400&family=Roboto+Slab:wght@300;400&display=swap" 
+rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Giovana Taveira</title>
+    </head>
 
-<html>
-<head>
-    <title> Giovana </title>
-</head>
+    <body>
+        <header>
+            <div>
+                <img src="./Imagem1.png" width=50px alt= "logo Giovana">
+            </div>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/giovanataveira">github</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/giovana-taveira-987676131/">linkedin</a>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:giovanataveira@hotmail.com">E-mail</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section class="container">
+                <div class="name">
+                    <h1>Giovana Taveira</h1>
+                    <h5>Full Stack em Formação</h5>
+                </div>
 
-<body style="background-color: blueviolet;">
-    teste
-</body>
-</html>
+                <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fas fa-chevron-down"></i> </i>
+
+                </div>
+
+                <div style="display: none;" id="about">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rerum labore vero nulla. 
+                        Vitae perferendis repudiandae dolorem reiciendis id necessitatibus ullam aperiam quas temporibus.
+                    </p>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <p>Deixe seu contato</p>
+                    </div>
+                                        <form action="">
+                        <input type="text" placeholder="Seu melhor e-mail">
+                        <button>enviar</button>
+
+                    </form>
+                </div>            
+            </section>
+        </main>
+
+        <script>
+            function displayAbout() {
+                var arrow = document.getElementById('animation');
+                arrow.classList.toggle('rotate')
+                var display = document.getElementById('about');
+                display.classList.toggle('active')
+            }
+        </script>
+
+
+    </body>
+    </html>
